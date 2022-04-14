@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: black;
+
+}
+.header{
+    margin-top: 5px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
+    
+        
+}
+h1{
+    font-size: 1rem;
+    margin-top: 0;
+    color: white;
+    
+}
+button{
+    align-self: flex-start;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    
+}
+
+button:hover{
+    background-color: gray;
+    border: none;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+input{
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+}
+
+input:focus{
+    
+
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+
