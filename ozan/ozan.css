@@ -1,0 +1,224 @@
+body{
+    background-color: black;
+    margin-top: 0;
+    font-family:  TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+
+}
+h1{
+    color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.homepage{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 100px;
+    }
+
+.nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    border-right: 1.5px solid gray;
+    width: 200px;
+    height: 1000px;
+}
+
+.main{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.nav-bar{
+    position: fixed;
+}
+
+.search-side{
+    margin-top: 10px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    border-left: 1.5px solid gray;
+    padding-right: 100px;
+    /* margin-left: 0px;
+    padding-left: 0; */
+
+}
+
+.search-bar{
+    padding-left: 35px;
+    position: fixed;
+
+}
+.home{
+    /* border-right: 1.5px solid gray; */
+    /* border-left: 1.5px solid gray;
+    border-bottom: 1.5px solid gray; */
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    align-self: center;
+    height: 50px;
+    justify-content: space-between;
+    width: 650px;
+    top: 0;
+    z-index: 102222222222222222;
+}
+
+.logo{
+    align-self: flex-start;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.logo:hover{
+    background-color: rgb(231, 233, 234, 0.1);
+    border: none;
+    opacity: 1;
+    border-radius: 50%;
+    height: 40px;
+    transition-duration: 0.2s;
+}
+
+
+.meteor{ 
+    cursor: pointer;
+    border: none;
+    padding-right: 10px;
+    color: white;
+    align-self: center;
+    
+    
+    
+    
+}
+
+.meteor:hover{
+    background-color: rgb(231, 233, 234, 0.1);
+    border: none;
+    opacity: 1;
+    border-radius: 50%; 
+    height: 10px;
+    
+     
+ 
+} 
+ 
+
+
+ul{
+    padding-left: 5px;
+    height: 50px;
+}
+
+li{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.header-li:hover{
+    background-color: rgb(231, 233, 234, 0.1);
+     border-radius: 15px; 
+     transition-duration: 0.2;
+}
+
+.nav-p{
+    align-self: flex-start;
+}
+
+.elips{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.tweet-btn:hover{
+    background-color: rgb(26, 140, 216);
+    transition-duration: 0.2s;
+}
+
+.tweet-btn{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tweet-p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tweet-p-button:hover{
+    background-color: rgb(26, 140, 216);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;;
+}
+
+.profile{
+    margin-top: 25px;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+}
+
+.profile:hover{ 
+    background-color: rgb(231, 233, 234, 0.1);
+    border-radius: 15px; 
+    transition-duration: 0.2;
+}
+
+.profile-btn{
+    background-color: green;
+    border: none;
+    border-radius: 34px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.searchbar{
+    background-color: rgb(32, 35, 39);;
+    color: rgb(231, 233, 234);
+    outline-style: none;
+    border: none;
+    border-radius: 30px;
+    padding-left: 15px;
+    height: 40px;
+    width: 300px;
+    cursor: text;
+    margin-left: 0;
+    
+}
+
+.twit {
+    display: flex;
+    z-index: -1;
+    flex-direction: column;
+    box-sizing: border-box; 
+    height: 108px;
+    background-color: aqua;
+    width: 670px;
+}
+
