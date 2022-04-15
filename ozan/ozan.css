@@ -17,12 +17,8 @@ h1{
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* justify-content: space-evenly; */
     margin-top: 0;
     margin-left: 100px;
-
-    gap: 0;
-
     }
 
 .nav{
@@ -42,9 +38,6 @@ h1{
     width: 670px;
     margin-left: 0;
     margin-right: 0;
-    justify-content: space-between;
-    
-
 }
 .nav-bar{
     position: fixed;
@@ -72,13 +65,14 @@ h1{
     /* border-left: 1.5px solid gray;
     border-bottom: 1.5px solid gray; */
     display: flex;
-    position: fixed;
+    position: sticky;
     flex-direction: row;
     align-self: center;
     height: 50px;
     justify-content: space-between;
     width: 650px;
-    
+    top: 0;
+    z-index: 102222222222222222;
 }
 
 .logo{
@@ -100,24 +94,29 @@ h1{
 }
 
 
-.meteor{
-    color: white;
-    background-color: black;
+.meteor{ 
     cursor: pointer;
     border: none;
     padding-right: 10px;
+    color: white;
+    align-self: center;
+    
+    
+    
+    
 }
 
-.meteor-btn:hover{
+.meteor:hover{
     background-color: rgb(231, 233, 234, 0.1);
     border: none;
     opacity: 1;
-    border-radius: 50%;
-    height: 40px;
-    transition-duration: 0.2s;
-
-}
-
+    border-radius: 50%; 
+    height: 10px;
+    
+     
+ 
+} 
+ 
 
 
 ul{
@@ -214,6 +213,12 @@ li{
 }
 
 .twit {
-    
+    display: flex;
+    z-index: -1;
+    flex-direction: column;
+    box-sizing: border-box; 
+    height: 108px;
+    background-color: aqua;
+    width: 670px;
 }
 
