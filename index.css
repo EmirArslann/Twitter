@@ -17,12 +17,8 @@ h1{
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* justify-content: space-evenly; */
     margin-top: 0;
     margin-left: 100px;
-
-    gap: 0;
-
     }
 
 .nav{
@@ -32,10 +28,7 @@ h1{
     padding-right: 100px;
     border-right: 1.5px solid gray;
     width: 200px;
-}
-
-.nav-bar{
-    position: fixed;
+    height: 1000px;
 }
 
 .main{
@@ -45,39 +38,39 @@ h1{
     width: 670px;
     margin-left: 0;
     margin-right: 0;
-    justify-content: space-between;
-    
-
+}
+.nav-bar{
+    position: fixed;
 }
 
-.search-side{
-    margin-top: 10px;
+.discover-side{
+    top: 5px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     border-left: 1.5px solid gray;
     padding-right: 100px;
-    /* margin-left: 0px;
-    padding-left: 0; */
 
 }
 
 .search-bar{
+    display: flex;
     padding-left: 35px;
+    position: sticky;
+    z-index: 1000000;
+    top: 5px;
 
 }
 .home{
-    /* border-right: 1.5px solid gray; */
-    /* border-left: 1.5px solid gray;
-    border-bottom: 1.5px solid gray; */
     display: flex;
-    position: fixed;
+    position: sticky;
     flex-direction: row;
     align-self: center;
-    height: 150px;
+    height: 50px;
     justify-content: space-between;
     width: 650px;
-    
+    top: 0;
+    z-index: 1022222;
 }
 
 .logo{
@@ -99,26 +92,29 @@ h1{
 }
 
 
-.meteor{
-    color: white;
-    background-color: black;
+.meteor{ 
     cursor: pointer;
     border: none;
     padding-right: 10px;
-    margin-bottom: 100px;
+    color: white;
+    align-self: center;
+    
+    
+    
     
 }
 
-.meteor-btn:hover{
+.meteor:hover{
     background-color: rgb(231, 233, 234, 0.1);
     border: none;
     opacity: 1;
-    border-radius: 50%;
-    height: 40px;
-    transition-duration: 0.2s;
-
-}
-
+    border-radius: 50%; 
+    height: 10px;
+    
+     
+ 
+} 
+ 
 
 
 ul{
@@ -133,6 +129,7 @@ li{
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    cursor: pointer;
 }
 
 .header-li:hover{
@@ -149,7 +146,6 @@ li{
     border-radius: 50%;
     border: 1px solid white;
     padding: 2px;
-    
 }
 
 .tweet-btn:hover{
@@ -214,5 +210,30 @@ li{
     
 }
 
+.twit {
+    display: flex;
+    z-index: -1;
+    flex-direction: column;
+    box-sizing: border-box; 
+    height: 108px;
+    background-color: aqua;
+    width: 670px;
+}
 
+.discover{
+    display: flex;  
+    flex-direction: column;
+    z-index: -1;
+    margin-top: 20px;
+    background-color: rgb(22, 24, 28);
+    border-radius: 15px;
+    margin-left: 34px;
+}
 
+h2{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;;
+}
