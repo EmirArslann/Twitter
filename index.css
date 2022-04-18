@@ -44,7 +44,7 @@ h1{
 }
 
 .discover-side{
-    top: 5px;
+    margin-top: 5px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,8 @@ h1{
     padding-left: 35px;
     position: sticky;
     z-index: 1000000;
-    top: 5px;
+    top: 0;
+    background-color: black;
 
 }
 .home{
@@ -68,9 +69,13 @@ h1{
     align-self: center;
     height: 50px;
     justify-content: space-between;
-    width: 650px;
+    width: 670px;
+    margin-left: 0;
+    margin-right: 0;
     top: 0;
     z-index: 1022222;
+    backdrop-filter: blur(5px);
+    
 }
 
 .logo{
@@ -98,10 +103,6 @@ h1{
     padding-right: 10px;
     color: white;
     align-self: center;
-    
-    
-    
-    
 }
 
 .meteor:hover{
@@ -110,13 +111,8 @@ h1{
     opacity: 1;
     border-radius: 50%; 
     height: 10px;
-    
-     
- 
 } 
  
-
-
 ul{
     padding-left: 5px;
     height: 50px;
@@ -223,11 +219,50 @@ li{
 .discover{
     display: flex;  
     flex-direction: column;
-    z-index: -1;
     margin-top: 20px;
     background-color: rgb(22, 24, 28);
     border-radius: 15px;
     margin-left: 34px;
+    width: 348px;
+}
+
+.discover-content-box{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 348px;
+}
+
+.discover-content-box:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(231, 233, 234, 0.1);
+    cursor: pointer;
+}
+
+.discover-content-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.discover-content-info:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(231, 233, 234, 0.1);
+    cursor: pointer;
+
+}
+
+.discover-content-img{
+    width: 68px;
+    height: 68px;
+
+}
+
+.Shaina{
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 h2{
@@ -236,4 +271,175 @@ h2{
     font-weight: bold;
     padding-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;;
+}
+
+h3{
+    color: #71767B;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.discover-content-p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.discover-content-p-kyiv{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 15px;
+    padding-left: 10px;
+    letter-spacing: 0.50px;
+    width: 211px;
+
+}
+
+.show{
+    color: #1D9BF0;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 13px;
+    padding-left: 10px;
+    
+}
+
+.trending{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.trending-a{
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 10px;
+    color: #1D9BF0;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.trending-a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.who{
+    display: flex;  
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: rgb(22, 24, 28);
+    border-radius: 15px;
+    margin-left: 34px;
+    width: 348px;
+}
+
+.who-content-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 348px;
+    height: 92px;
+
+}
+
+.who-content-box:hover{
+    transition-duration: 0.2s;
+    background-color: rgb(231, 233, 234, 0.1);
+    cursor: pointer;
+
+}
+
+.who-content-img{
+    width: 48px;
+    height: 48px;
+}
+
+.Elon{
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
+
+.who-content-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.who-content-p{
+    color: #E7E9EA;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 17px;
+    padding-left: 25px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.who-content-p-alex{
+    color: #E7E9EA;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 15px;
+    padding-left: 25px;
+    letter-spacing: 0.10px;
+    font-weight: bold;
+    width: 100px;
+
+
+
+}
+
+.who-content-h3{
+    color: #71767B;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 25px;
+
+}
+
+.who-content-button{
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: 65px;
+}
+
+.who-content-btn{
+    width: 77px;
+    height: 32px;
+    border-radius: 25px;
+    border: none;
+    background-color: #EFF3F4;
+    color: #0F1419;
+}
+
+.who-content-btn:hover{
+    background-color: rgb(215, 219, 220);
+    transition-duration: 0.2s;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 34px;
+}
+
+.footer-p{
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #71767B;
+    cursor: pointer;
+}
+
+.footer-p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
