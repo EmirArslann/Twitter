@@ -146,8 +146,10 @@ li{
 }
 
 .elips{
-    border-radius: 35%;
+    border-radius: 50%;
     border: 1px solid white;
+    padding: 2px;
+    
 }
 
 .tweet-btn:hover{
