@@ -28,7 +28,6 @@ h1{
     padding-right: 100px;
     border-right: 1.5px solid gray;
     width: 200px;
-    height: 1000px;
 }
 
 .main{
@@ -113,12 +112,12 @@ h1{
     height: 10px;
 } 
  
-ul{
+.nav-bar ul{
     padding-left: 5px;
     height: 50px;
 }
 
-li{
+.header-li{
     color: white;
     list-style: none;
     display: flex;
@@ -172,9 +171,12 @@ li{
 
 .profile{
     margin-top: 25px;
+    color: white;
+    list-style: none;
     font-size: small;
     font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
 }
+
 
 .profile:hover{ 
     background-color: rgb(231, 233, 234, 0.1);
@@ -208,12 +210,163 @@ li{
 
 .twit {
     display: flex;
-    z-index: -1;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box; 
     height: 108px;
-    background-color: aqua;
+    background-color: black;
     width: 670px;
+    padding: 0 10px;
+    border-bottom: 1.5px solid gray;
+}
+
+.lilpic img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 5px;
+}
+.whats {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+.whats input {
+    background-color: black;
+    width: 570px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    outline-style: none;
+    color: rgb(231, 233, 234);
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: space-between;
+}
+.icons ul {
+    margin: 0;
+    height: 45px;
+}
+.icons li {
+    display: inline;
+    margin-left: 20px;
+    color: rgb(29, 155, 240);
+}
+.icons li:hover {
+    background-color: rgb(22, 24, 28);
+    transition-duration: 0.2s;
+    padding: 3px;
+}
+.icons button {
+    height: 32px;
+    width: 77px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(29, 155, 240);
+    color: rgb(231, 233, 234);
+    cursor: pointer;
+}
+.icons button:hover {
+    background-color: rgb(26, 140, 216);
+    transition-duration: 0.2s;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box; 
+    height: 108px;
+    background-color: black;
+    width: 670px;
+    padding: 0 10px;
+    border-bottom: 1.5px solid gray;
+}
+.home-content-box {
+    display: flex;
+    flex-direction: column;
+}
+.home-content-acc {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+}
+.home-content-acc-p {
+    color: #E7E9EA;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-size: 17px;
+    padding-left: 3px;
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+.home-content-acc-h3 {
+    color: #71767B;
+    font-family: Verdana, Geneva, Tahoma, sans-serifTwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 3px;
+    align-self: center;
+}
+.home-content-twit {
+    color: rgb(231, 233, 234) ;
+    font-size: 14px;
+    font-weight: bold;
+}
+.home-content-twit p {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.home-content-icons ul {
+    margin: 7px 0 0 0;
+    padding-left: 15px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-content-icons li {
+    display: inline;
+    color: white;
+    cursor: pointer;
+}
+.comment {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.comment:hover {
+    color: rgb(29, 155, 240);
+}
+.retweet {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.retweet:hover {
+    color: rgb(0, 186, 124);
+}
+.like {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.like:hover {
+    color: rgb(249,24,128);
+}
+.share {
+    font-size: 16px;
+}
+.share:hover {
+    color: rgb(29, 155, 240);
 }
 
 .discover{
@@ -224,7 +377,7 @@ li{
     border-radius: 15px;
     margin-left: 34px;
     width: 348px;
-    position: fixed;
+    position: sticky;
 }
 
 .discover-content-box{
